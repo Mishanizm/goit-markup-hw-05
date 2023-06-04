@@ -532,18 +532,12 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.servis-portfolio:hover .portfolio-cover-text {
-  transform: translateY(0);
-}
-.servis-portfolio:focus .portfolio-cover-text {
-  transform: translateY(0);
-}
 .image-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.image-link:hover,
-.image-link:focus {
+.image-link:hover .portfolio-cover-text,
+.image-link:focus .portfolio-cover-text {
   transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -567,10 +561,7 @@ img {
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-cover-text:hover,
-.portfolio-cover-text:focus {
-  transform: translateY(0%);
-}
+
 .tools {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
